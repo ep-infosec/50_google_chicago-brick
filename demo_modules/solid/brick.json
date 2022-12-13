@@ -1,0 +1,11 @@
+{
+  "name": "solid",
+  "client_path": "./solid.ts",
+  "credit": {
+    "title": "Solid Color",
+    "author": "Matt Handley"
+  },
+  "config": {
+    "color": "yellow"
+  }
+}

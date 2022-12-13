@@ -1,0 +1,25 @@
+{
+  "name": "chicago-brick",
+  "version": "0.6.1",
+  "description": "Code which can manage a large video wall with multiple nodes.",
+  "main": "server/server.js",
+  "scripts": {
+    "test": "deno test lib/",
+    "lint": "deno lint lib client server demo_modules",
+    "release": "node_modules/.bin/release-it -n"
+  },
+  "type": "module",
+  "repository": "github:google/chicago-brick",
+  "author": "",
+  "license": "Apache-2.0",
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run-script lint && npm test",
+      "pre-push": "npm run-script lint && npm test"
+    }
+  },
+  "devDependencies": {
+    "husky": "^2.7.0",
+    "release-it": "^15.5.0"
+  }
+}
